@@ -7,3 +7,6 @@
 
 # 2025-10-25 19:46:37.495876
 +what are the advantages of using fedora over debian as a developer
+
+# 2025-10-25 20:09:52.569970
++I want to create a sustainable urban microfarm in a small city apartment (roughly 50m2) Provide a detailed plan covering: Factuality: best plants, lighting, water,soil/substrate , and small scale hydroponics or aquaponics setups with research baked reasoning, creativity: innovative ways to maximise space, asethetic design and unique twists like vertical gardens, smart automation or AI monitoring, practicality: budget friendly execution, maintanence tips, time management and potential pitfalls to avoid.

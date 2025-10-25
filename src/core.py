@@ -1,4 +1,4 @@
-import json, ollama, os, asyncio
+import json, ollama, os, time
 from prompt_toolkit import PromptSession
 from prompt_toolkit.history import FileHistory
 
@@ -64,6 +64,7 @@ def practical_start():
 while True:
     try:
         user_input = session.prompt('> ')
+        start = time.time()
         factual_start()
         creative_start()
         practical_start()
@@ -72,6 +73,8 @@ while True:
         response = client.chat(model=factual, messages=[{"role":"user", "content": factual_prompt}])['message']['content']
         curr_data.append(response)
         print(response)
+        end = time.time()
+        print(f"Elapsed: {(end-time) * 1000:2f} ms")
         write_to_communications(curr_data)
         
         
