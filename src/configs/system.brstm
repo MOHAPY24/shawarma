@@ -1,0 +1,5 @@
+{
+    "factual":"llama2",
+    "creative":"tinyllama",
+    "practical":"phi3:mini"
+}
