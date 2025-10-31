@@ -11,7 +11,7 @@ Shawarma is an advanced frontend application designed to facilitate deep researc
 - **Extensible architecture**: Easily add new models and functionalities.
 - **Open-source**: Fully open-source for community contributions and transparency.
 - **Python-based**: Built with Python for ease of use and integration.
-- **Cross-platform**: Compatible with Windows, macOS, and Linux.
+- **Cross-platform**: Compatible with MacOS, BSD, Solaris, and Linux.
 
 ### Installation
 1. Clone the repository:
@@ -27,7 +27,8 @@ Shawarma is an advanced frontend application designed to facilitate deep researc
 3. Configure Ollama models as per your requirements in `src/configs/system.brstm`.
 4. Run the application:
    ```bash
-   python src/init.py
+   chmod +x shawarma
+   ./shawarma
    ```
 5. Enjoy using Shawarma for your deep research and model management needs!
 

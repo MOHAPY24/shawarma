@@ -1,4 +1,4 @@
-import json, ollama, os, time, sys
+import json, ollama, os, sys
 from prompt_toolkit import PromptSession
 from prompt_toolkit.history import FileHistory
 
@@ -73,7 +73,6 @@ while True:
             user_input = sys.argv[1]
         else:
             user_input = session.prompt('> ')
-        start = time.time()
         factual_start()
         creative_start()
         practical_start()
@@ -82,8 +81,6 @@ while True:
         response = client.chat(model=factual, messages=[{"role":"user", "content": factual_prompt}])['message']['content']
         curr_data.append(response)
         print(response)
-        end = time.time()
-        print(f"Elapsed: {(end-time) * 1000:2f} ms")
         write_to_communications(curr_data)
         if t:
             t = False
