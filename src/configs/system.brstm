@@ -1,5 +1,7 @@
 {
     "factual":"mistral", 
     "creative":"tinyllama",
-    "practical":"phi3:mini"
+    "practical":"phi3:mini",
+
+    "addons":"be extremely detailed and explicit"
 }
