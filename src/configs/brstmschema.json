@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model Role Mapping",
+  "type": "object",
+  "properties": {
+    "factual": {
+      "type": "string",
+      "description": "Model identifier used for factual tasks."
+    },
+    "creative": {
+      "type": "string",
+      "description": "Model identifier used for creative tasks."
+    },
+    "practical": {
+      "type": "string",
+      "description": "Model identifier used for practical tasks."
+    },
+    "addons": {
+      "type": "string",
+      "description": "Optional extra configuration or instructions."
+    }
+  },
+  "required": ["factual", "creative", "practical"],
+  "additionalProperties": false
+}
