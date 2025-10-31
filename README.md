@@ -36,8 +36,8 @@ Shawarma is an advanced frontend application designed to facilitate deep researc
 Contributions are welcome! Please fork the repository and submit a pull request with your changes.
 
 ### License
-This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
-Permissive open-source license for wide adoption and contribution, allowing users to freely use, modify, and distribute the software with minimal restrictions.
+This project is licensed under the BSD-3 Clause - see the LICENSE file for details.
+
 
 ### Contact
 For questions or support, please open an issue on GitHub or contact the maintainer at @MOHAPY24.
