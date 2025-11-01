@@ -1,6 +1,12 @@
 # Shawarma
 ## A versatile Ollama frontend for deep research and model management.
 
+[![Python](https://img.shields.io/badge/python-3.13.7-yellow.svg)](https://www.python.org/downloads/release/python-3137/)
+[![License](https://img.shields.io/\:license-Apache%202-blue.svg)](LICENSE)
+![Status](https://img.shields.io/badge/status-Production--Ready-success.svg)
+![Platform](https://img.shields.io/badge/platform-cross--platform-lightgrey.svg)
+![Contributions](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)
+
 ## Overview
 Shawarma is an advanced frontend application designed to facilitate deep research and efficient management of multiple Ollama models. It enables you to use up to 4 different models simultaneously, allowing them to communicate and share information to enhance the quality of a final response. This final response merges the strengths of each model (Factual, Creatice and Pracitcal models), providing a comprehensive and well-rounded answer to user queries.
 
