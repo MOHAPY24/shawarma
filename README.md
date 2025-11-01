@@ -1,7 +1,7 @@
 # Shawarma
 ## A versatile Ollama frontend for deep research and model management.
 
-[![Python](https://img.shields.io/badge/python-3.13.7-yellow.svg)](https://www.python.org/downloads/release/python-3137/)
+[![Python](https://img.shields.io/badge/python-3.14.0-yellow.svg)](https://www.python.org/downloads/release/python-3137/)
 [![License](https://img.shields.io/\:license-BSD3%20-blue.svg)](LICENSE)
 ![Status](https://img.shields.io/badge/status-Production--Ready-success.svg)
 ![Platform](https://img.shields.io/badge/platform-cross--platform-lightgrey.svg)
