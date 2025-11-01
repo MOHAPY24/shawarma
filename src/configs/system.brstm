@@ -1,8 +1,7 @@
 {
     "$schema": "brstmschema.json",
-    "factual":"mistral", 
+    "factual":"mistral",
     "creative":"tinyllama",
     "practical":"phi3:mini",
-    
     "addons":"be extremely detailed and explicit"
 }

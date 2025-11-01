@@ -1,22 +1,62 @@
 #!/bin/sh
 
+
+schema=$(cat << 'EOF'
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Model Role Mapping",
+  "typ
+fie": "object",
+  "properties": {
+    "factual": {
+      "type": "string",
+      "description": "Model identifier used for factual tasks."
+    },
+    "creative": {
+      "type": "string",
+      "description": "Model identifier used for creative tasks."
+    },
+    "practical": {
+      "type": "string",
+      "description": "Model identifier used for practical tasks."
+    },
+    "addons": {
+      "type": "string",
+      "description": "Optional extra configuration or instructions."
+    }
+  },
+  "required": ["factual", "creative", "practical"],
+  "additionalProperties": false
+}
+EOF
+)
+
 if [ -e "$(pwd)/src/configs/memory/communication.json" ]; then
     echo
 else
-    mkdir -p "$(pwd)/src/configs/memory/communication.json"
+    mkdir -p "$(pwd)/src/configs/memory/"
+    touch "$(pwd)/src/configs/memory/communication.json"
 fi
 
 if [ -e "$(pwd)/src/configs/system.brstm" ]; then
     echo
 else
-    mkdir -p "$(pwd)/src/configs/system.brstm"
+    mkdir -p "$(pwd)/src/configs/"
+    touch "$(pwd)/src/configs/system.brstm"
 fi
 
+if [ -e "$(pwd)/src/configs/brstmschema.json" ]; then
+    echo
+else
+
+    mkdir -p "$(pwd)/src/configs/"
+    echo "$schema" > "$(pwd)/src/configs/brstmschema.json"
+fi
 
 
 
 if [ "$1" != "" ]; then
     python3 "$(pwd)/src/core.py" "$1"
 else
-    python3 "$(pwd)/src/core.py" 
+    python3 "$(pwd)/src/core.py"
 fi
