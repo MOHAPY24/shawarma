@@ -1,22 +1,22 @@
 #!/bin/sh
 
-if [ -e "src/configs/memory/communication.json" ]; then
+if [ -e "$(pwd)/src/configs/memory/communication.json" ]; then
     echo
 else
-    mkdir -p src/configs/memory/communication.json
+    mkdir -p "$(pwd)/src/configs/memory/communication.json"
 fi
 
-if [ -e "src/configs/system.brstm" ]; then
+if [ -e "$(pwd)/src/configs/system.brstm" ]; then
     echo
 else
-    mkdir -p src/configs/system.brstm
+    mkdir -p "$(pwd)/src/configs/system.brstm"
 fi
 
 
 
 
 if [ "$1" != "" ]; then
-    python3 src/core.py "$1"
+    python3 "$(pwd)/src/core.py" "$1"
 else
-    python3 src/core.py 
+    python3 "$(pwd)/src/core.py" 
 fi
